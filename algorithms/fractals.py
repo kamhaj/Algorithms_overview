@@ -64,13 +64,13 @@ class TrianglesFractal(Fractal):
     def run(self):
         self.draw_fractal()
 
-    def transformation_1(self, x, y):     # stem
+    def transformation_1(self, x, y):
         return 0.5 * x, 0.5 * y
 
-    def transformation_2(self, x, y):     # successively smaller leaflets
+    def transformation_2(self, x, y):
         return 0.5 * x + 1, 0.5 * y
 
-    def transformation_3(self, x, y):     # largest left-hand leaflet
+    def transformation_3(self, x, y):
         return 0.5 * x, 0.5 * y + 1
 
     def draw_fractal(self):
