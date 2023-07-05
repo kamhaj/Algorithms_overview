@@ -8,8 +8,8 @@ def insertion_sort_asc(arr: list[int], is_reversed=False) -> None:
     """
     sorts a list by diving it into a sorted and unsorted part
 
-    @arr: list[int]
-    @is_reversed: bool
+    :param arr: list[int | float]
+    :param is_reversed: bool
     """
     if not arr:
         return
@@ -32,5 +32,9 @@ if __name__ == '__main__':
     print(list_to_be_sorted)
 
     list_to_be_sorted = ["Poland", "Germany", "Argentina", 'brasil', "England", "Belgium"]  # case sensitive
+    insertion_sort_asc(list_to_be_sorted)
+    print(list_to_be_sorted)
+
+    list_to_be_sorted = [9]
     insertion_sort_asc(list_to_be_sorted)
     print(list_to_be_sorted)

@@ -9,8 +9,8 @@ def selection_sort_asc(arr: list[int], is_reversed=False) -> None:
     """
     sorts a list by selecting max (min) number and moving it to the beginning
 
-    @arr: list[int]
-    @is_reversed: bool
+    :param arr: list[int | float]
+    :param is_reversed: bool
     """
     if not arr:
         return

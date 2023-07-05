@@ -11,8 +11,8 @@ def merge_sort(arr: list[int | float], is_reversed=False):
     """
     sorts a list by dividing an array into simpler subarrays, sorting them and merging the results
 
-    @arr: list[int | float]
-    @is_reversed: bool
+    :param arr: list[int | float]
+    :param is_reversed: bool
     """
     if not arr:
         return
@@ -34,9 +34,9 @@ def merge_arrays(arr, left_arr, right_arr):
     """
     merge phase of merge sort
 
-    @type arr: list[int | float]
-    @type arr: left_arr[int | float]
-    @type arr: right_arr[int | float]
+    :param arr: list[int | float]
+    :param left_arr: left_arr[int | float]
+    :param right_arr: right_arr[int | float]
     """
     left_arr_idx = right_arr_idx = 0
     merged_arr_idx = 0
